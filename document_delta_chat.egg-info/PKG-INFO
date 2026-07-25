@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: document-delta-chat
+Version: 1.0.0
+Requires-Python: >=3.11
+Requires-Dist: fastapi>=0.115
+Requires-Dist: uvicorn[standard]>=0.30
+Requires-Dist: python-multipart>=0.0.9
+Requires-Dist: pydantic>=2.8
+Requires-Dist: pydantic-settings>=2.4
+Requires-Dist: sqlalchemy>=2.0
+Requires-Dist: pymupdf>=1.24
+Requires-Dist: pillow>=10
+Requires-Dist: pytesseract>=0.3.13
+Requires-Dist: opencv-python-headless>=4.10
+Requires-Dist: rapidfuzz>=3.9
+Requires-Dist: numpy>=1.26
+Requires-Dist: scipy>=1.13
+Requires-Dist: structlog>=24.2
+Requires-Dist: httpx>=0.27
+Requires-Dist: jinja2>=3.1
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
+Requires-Dist: pytest-cov>=5; extra == "dev"
+Requires-Dist: reportlab>=4.2; extra == "dev"
+Provides-Extra: openai
+Requires-Dist: openai>=1.40; extra == "openai"

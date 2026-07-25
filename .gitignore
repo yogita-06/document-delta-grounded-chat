@@ -1,0 +1,14 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+apps/web/node_modules/
+apps/web/dist/
+data/app.db
+data/uploads/*
+data/canonical/*
+data/reports/*
+data/markup/*
+data/traces/*
+!data/**/.gitkeep
