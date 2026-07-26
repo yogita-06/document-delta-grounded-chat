@@ -19,3 +19,4 @@ src/ingest/adapters.py
 src/orchestration/service.py
 src/storage/store.py
 tests/test_core.py
+tests/test_quality.py
