@@ -3,7 +3,11 @@ import {createRoot} from 'react-dom/client';
 import axios from 'axios';
 import './style.css';
 
-const api = axios.create({baseURL: 'http://localhost:8000'});
+const api = axios.create({
+  baseURL:
+    import.meta.env.VITE_API_BASE_URL ||
+    'http://localhost:8000',
+});
 const suggestions = ['What changed?', 'Which dimensions changed?', 'What changed on page 1?', 'Which notes were added?', 'Show high-severity changes', 'Which equipment IDs changed?', 'What was removed?', 'Show low-confidence findings'];
 
 type Delta = {delta_id:string; change_type:string; element_type:string; old_value?:string; new_value?:string; old_page?:number; new_page?:number; confidence:number; severity:string; description:string};
